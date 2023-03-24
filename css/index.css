@@ -821,8 +821,8 @@ a{
     height: 500px;
     display: flex;
     border-radius: 10px;
-    /* align-items: end; */
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     z-index: 2;
     transition: var(--main-transition);
     background-color: red;
@@ -873,8 +873,8 @@ a{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     border-radius: 10px;
 }
 .sections-TEST-MEMBERS .container .col .block .icons{
