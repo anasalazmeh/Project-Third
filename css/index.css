@@ -73,13 +73,12 @@ a{
     margin: 0;
     padding: 0;
     z-index: 3;
-    transition: var(--main-transition);
 }
 .header .container ul li{
     list-style-type: none;
     padding:20px 25px;
     font-size: 20px;
-    transition: var(--main-transition);
+    /* transition: var(--main-transition); */
     position: relative;
     cursor: pointer;
     margin: 0;
@@ -117,7 +116,7 @@ a{
         list-style-type: none;
         padding:10px 10px;
         font-size: 15px;
-        transition: var(--main-transition);
+        /* transition: var(--main-transition); */
         position: relative;
         cursor: pointer;
         margin: 0;
@@ -153,9 +152,6 @@ a{
     right: 0;
     top: -10px;
 } */
-.header .container ul li.muenn{
-    transition:5s;
-}
 .header .container .muen .col div{
    font-size: 18px;
     height: 50px;
@@ -210,6 +206,11 @@ a{
     .header .container ul li.muenn:hover +div.muen{
         top: 109px;
         visibility: visible;
+    }
+    .header .container div.muen:hover{
+        display:  grid;
+        visibility: visible;
+        top: 109px;
     }
     .header .container div.muen{
         grid-template-columns: 1fr;
@@ -675,11 +676,33 @@ a{
     top: -160px;
     border-color: transparent transparent white transparent;
     border-style: solid;
-    border-width: 0px 0px 500px 170px;
+    border-width: 0px 0px 180px 500px;
     z-index: -1;
 }
+@media (min-width:487px) and (max-width:686px){
+    .FEATURES .sections-FEATURES .container .col .text::before{
+        content: "";
+        position: absolute;
+        /* background-color: white; */
+        /* background-color: red; */
+        /* width: 150%;
+        height: 100%;
+        top:-55px;
+        right: -10;
+        z-index: -1;
+        transform: rotate(-10deg);
+        /* transition: var(--main-transition); */
+        transition: var(--main-transition);
+        right: 0;
+        top: -160px;
+        border-color: transparent transparent white transparent;
+        border-style: solid;
+        border-width: 0px 0px 180px 700px;
+        z-index: -1;
+    }
+}
 .FEATURES .sections-FEATURES .container .col:hover .text:before{
-    border-width: 0px 170px 500px 170px;
+    border-width: 0px 757px 159px 0px;
     /* border-width: 0px 366px 156px 656px; */
 }
 .FEATURES .sections-FEATURES .container .col .text h1 hr{
