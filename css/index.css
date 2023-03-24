@@ -675,17 +675,17 @@ a{
     top: -160px;
     border-color: transparent transparent white transparent;
     border-style: solid;
-    border-width: 0px 0px 500px 1500px;
+    border-width: 0px 0px 500px 170px;
     z-index: -1;
 }
 .FEATURES .sections-FEATURES .container .col:hover .text:before{
-    border-width: 0px 370px 159px 0px;
+    border-width: 0px 170px 500px 170px;
     /* border-width: 0px 366px 156px 656px; */
 }
 .FEATURES .sections-FEATURES .container .col .text h1 hr{
     width: 70%;
     height: 5px;
-    background-color: red;
+    background-color: #f44036ed;
     border: none;
 }
 .FEATURES .sections-FEATURES .container .col .text p{
@@ -825,7 +825,6 @@ a{
     justify-content: flex-end;
     z-index: 2;
     transition: var(--main-transition);
-    background-color: green;
 
 }
 .sections-TEST-MEMBERS .container .col::before{
